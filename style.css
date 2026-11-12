@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #fff0f5;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc(100vh - 160px);
+    background-color: #fff0f5;
+    padding: 20px;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(219, 112, 147, 0.2);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(219, 112, 147, 0.24);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.nome-produto {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #ad4775;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.descricao {
+    font-size: 14px;
+    color: #a66b85;
+    flex: 1;
+}
+
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d63384;
+    white-space: nowrap;
+}
+
+form {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(219, 112, 147, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #ad4775;
+}
+
+.input_texto,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e8a3c0;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.input_texto[readonly] {
+    background-color: #fce4ec;
+    color: #a66b85;
+    cursor: not-allowed;
+    border: 1px solid #e8a3c0;
+}
+
+select:disabled {
+    background-color: #fce4ec;
+    color: #a66b85;
+    cursor: not-allowed;
+    border: 1px solid #e8a3c0;
+}
+
+.btn_enviar {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #d63384;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn_enviar:hover {
+    background-color: #ad2164;
+}
+
+header,
+.navbar,
+.bg-dark {
+    background-color: #ad2164 !important;
+}
+
+h1 {
+    color: #ad2164;
+}
